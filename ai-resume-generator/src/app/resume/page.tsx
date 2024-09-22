@@ -15,11 +15,11 @@ export default function ResumeBuilder() {
 
   return (
     <div className="p-6">
-      <h1 className="text-3xl font-bold mb-4">Create Your Resume</h1>
+      <h1 className="text-3xl font-bold text-black mb-4">Create Your Resume</h1>
 
-      {/* Job Experience */}
+      
       <div className="mb-8">
-        <h2 className="text-xl font-semibold mb-2">Job Experience</h2>
+        <h2 className="text-xl font-semibold mb-2 text-black">Job Experience</h2>
         {jobs.map((job, index) => (
           <div key={index} className="mb-4">
             <input
@@ -60,9 +60,8 @@ export default function ResumeBuilder() {
         <button onClick={addJob} className="bg-blue-500 text-white px-4 py-2">Add Job</button>
       </div>
 
-      {/* Education */}
       <div className="mb-8">
-        <h2 className="text-xl font-semibold mb-2">Education</h2>
+        <h2 className="text-xl font-semibold text-black mb-2">Education</h2>
         {education.map((edu, index) => (
           <div key={index} className="mb-4">
             <input
@@ -103,9 +102,9 @@ export default function ResumeBuilder() {
         <button onClick={addEducation} className="bg-blue-500 text-white px-4 py-2">Add Education</button>
       </div>
 
-      {/* Skills */}
+      
       <div className="mb-8">
-        <h2 className="text-xl font-semibold mb-2">Skills</h2>
+        <h2 className="text-xl font-semibold mb-2 text-black">Skills</h2>
         {skills.map((skill, index) => (
           <div key={index} className="mb-4">
             <input
